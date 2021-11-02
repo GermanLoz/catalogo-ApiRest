@@ -1,0 +1,135 @@
+@media (max-width:1050px){
+.catalogo {
+    grid-template-columns:auto auto auto ;
+}
+}
+@media (max-width:800px){
+.contenido-table div p{
+    width:120px;
+}
+.catalogo {
+    grid-template-columns:auto auto;
+}
+.inicio{
+    grid-template-columns:100%;
+}
+.inicio p{
+  margin-top:-26rem;
+}
+.inicio a {
+  margin-top:-10rem;
+  margin-bottom:10rem;
+  margin-right:5vw;
+  margin-left:5vw;
+}
+#content-inicio form{
+  display:block;
+}
+}
+@media (max-width:603px){
+.catalogo {
+    grid-template-columns:auto;
+}
+.card{
+    width:18rem;
+}
+.filtrar select{
+    width:70vw;
+}
+.nav .nav-ul{
+    height:10rem;
+    margin:0.7rem 0rem;
+    padding-top:5px;
+    position:absolute;
+    z-index:5;
+    width:100%;
+    margin-left:-0.5rem;
+    color:var(--negro);
+    display:none;
+    text-align:center;
+    background:var(--blanco);
+}
+.nav{
+    padding:0.5rem;
+}
+.button-nav{
+    display:block;
+    height:2.7rem;
+    background:var(--violeta);
+    width:2.7rem;
+    border:none;
+}
+.button-nav i{
+    font-size:1.3rem;
+    color:var(--blanco);
+}
+.nav .nav-ul .li a{
+    position:relative;
+    z-index:10;
+    top:0;
+    color:var(--negro);
+}
+}
+@media (max-width:584px){
+.img{
+    width:100px;
+    height:100px;
+}
+.contenido-table div {
+    padding:5px;
+}
+.contenido-table div p{
+    width:100px;
+}
+}
+@media (max-width:463px){
+.inicio a {
+  margin-top:-4rem;
+  margin-bottom:4rem;
+}
+.nav .nav-ul{
+    height:10rem;
+    margin:0.7rem 0rem;
+    padding-top:5px;
+    position:absolute;
+    z-index:5;
+    width:100%;
+    margin-left:-0.5rem;
+    color:var(--negro);
+    display:none;
+    text-align:center;
+    background:var(--blanco);
+}
+.nav{
+    padding:0.5rem;
+}
+.button-nav{
+    display:block;
+    height:2.7rem;
+    background:var(--violeta);
+    width:2.7rem;
+    border:none;
+}
+.button-nav i{
+    font-size:1.3rem;
+    color:var(--blanco);
+}
+.nav .nav-ul .li a{
+    position:relative;
+    z-index:10;
+    top:0;
+    color:var(--negro);
+}
+}
+@media (max-width:330px){
+.inicio a {
+  margin-top:-1rem;
+  margin-bottom:1rem;
+}
+.inicio img {
+    height:20rem;
+}
+.mensaje p{
+    padding:1rem 0rem;
+}
+}

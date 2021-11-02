@@ -1,0 +1,345 @@
+:root{
+    --celeste:#6C8FFB;
+    --violeta:#a35091;
+    --azul:#122a40;
+    --negro:#0a0700;
+    --gris:#e5e5e5;
+    --blanco:#f8f8f8;
+    --negro-secondary: #1E1E1E;
+
+}
+* {
+    margin:0px;
+    text-decoration:none;
+    list-style: none;
+    padding:0px;
+    outline:none;
+    box-sizing:border-box;
+}
+.button-nav{
+  display:none;
+}
+.mensaje{
+  width:70vw;
+  margin-left:15vw;
+  min-height:3rem;
+  height:auto;
+  border-radius:8px;
+  text-align:center;
+  justify-content:center;
+  color:var(--blanco);
+  margin-bottom:1rem;
+}
+.close-form{
+  position:absolute;
+  top:15px;
+  color:var(--blanco);
+  height:2.8rem;
+  font-size:17px;
+  width:70vw;
+  left:15vw;
+  font-weight:bolder;
+  border-radius:8px;
+  border:none;
+  font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+  background:var(--violeta);
+}
+.mensaje p{
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-size:20px;
+    padding-top:0.7rem;
+}
+.nav{
+    background: var(--celeste);
+    height:4rem;
+}
+.nav .nav-ul{
+    display:flex;
+    justify-content:center;
+}
+.nav .nav-ul .li {
+    margin-top:1.5rem;
+}
+.nav .nav-ul .li a{
+    padding:0px 5px;
+    font-size:14px;
+    font-weight:bolder;
+    color:var(--blanco);
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+
+/*CATALOGO*/
+
+.filtrar{
+    margin:3rem 5.5vw;
+}
+.filtrar select{
+    background:var(--celeste);
+    padding:0.5rem 1rem;
+    width:50vw;
+    border:none;
+    font-size:17px;
+    font-weight:bolder;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    color:var(--blanco);
+}
+.filtrar select option{
+    font-weight:bolder;
+    padding:10px 0px;
+    font-size:17px;
+    line-height:3rem;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+.catalogo {
+    margin:2rem 0rem;
+    display:grid;
+    justify-content:center;
+    grid-template-columns:auto auto auto auto;
+}
+.catalogo .card{
+    margin:1rem 15px;
+}
+.card{
+    width:17rem;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;
+    padding-top:1rem;
+    border:1px solid var(--gris);
+    border-radius:8px;
+}
+.card img{
+    width: auto;
+    height: 230px;
+}
+.card h3 {
+    width:100%;
+    font-size:22px;
+    color:var(--negro);
+    font-weight:bolder;
+    text-align:left;
+    padding:2rem 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.card .praice{
+    border-radius:0px 15px 15px 8px;
+    color:var(--blanco);
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    text-align:left;
+    width:60%;
+    padding:10px 15px;
+    background:var(--celeste);
+}
+.text-content{
+    display:block;
+}
+
+/* PANEL DE CONTROL */
+
+.panel-control{
+    min-height:100vh;
+    background:var(--negro-secondary);
+}
+.form-product input, textarea, select {
+    display:block;
+    height:2.6rem;
+    font-size:16px;
+    width:90vw;
+    margin:1rem 5vw;
+    padding-left:10px;
+    border:1px solid var(--azul);
+}
+.form-product select {
+    background:var(--violeta);
+    color:var(--blanco);
+}
+.form-product input[type="file"]{ 
+    background:var(--violeta);
+    color:var(--blanco);
+}
+.form-product input[type="submit"]{ 
+    background:var(--gris);
+    color:var(--negro);
+    font-weight:800;
+    font-size:16px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+
+/* ADMIN STYLES */  
+#titles p{
+  font-weight:bolder;
+}
+.tabla{
+  display:table;
+  border-radius:18px 18px 0px 0px;
+  background:var(--gris);
+  color:var(--negro);
+  width: 333px;
+  text-align: center;
+  margin: 2rem auto;
+}
+.contenido-table{
+  display:table-row;
+}
+.contenido-table div{
+    display: table-cell;
+    border: 1px solid var(--gris);
+    vertical-align: middle;
+    padding: 10px;
+}
+.contenido-table div p{
+  width:200px;
+  font-weight:bold;
+  font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+.contenido-table .item{
+  background:var(--azul);
+  color:var(--blanco);
+}
+.editar{
+  padding:0px;
+  background:var(--blanco);
+  border:none;
+  border-radius:8px;
+  margin:0px;
+  width:2.7rem;
+  height:2.7rem;
+}
+.editar:hover{
+  background:var(--gris-secondary);
+  color:var(--blanco);
+}
+.editar i{
+  font-size:1.3rem;
+}
+.modal-admin{
+  animation-duration:1s;
+  animation-name:animat;
+  background:var(--gris);
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  top:0;
+}
+.form-product {
+  display:none;
+}
+.add-producto{
+  width:70vw;
+  height:3rem;
+  border:none;
+  font-size:17px;
+  font-weight:bolder;
+  background:var(--violeta);
+  border-radius:15px;
+  color:var(--blanco);
+  margin:2rem 0rem;
+  margin-left:15vw;
+}
+.modal-admin .form{
+  padding:1rem 8vw;
+}
+.back{
+  width:3.5rem;
+  height:3.5rem;
+  margin:1rem;
+  border:none;
+  background:var(--blue);
+}
+.back i{
+  font-size:1.6rem;
+  color:var(--blanco);
+}
+.img {
+    width:200px;
+    height:200px;
+}
+#delete{
+    background:#F05827;
+    color:var(--blanco);
+    margin-top:1.5rem;
+}
+#delete:hover{
+  background:var(--negro);
+}
+
+/*  FORM ADMIN    */
+#formEdit{
+  display:none;
+  position:fixed;
+  top:0;
+  min-height:100%;
+  background:var(--negro);
+  z-index:10;
+  padding-top:15vh;
+}
+
+/*INICIO*/
+.form input{
+  padding-left:5px;
+  height:2rem;
+}
+.form input[type="submit"]{ 
+    background:var(--celeste);
+    color:var(--blanco);
+    font-weight:700;
+    border:none;
+    width:11.1rem;
+    padding:0rem 2rem;
+    font-size:16px;
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+#content-inicio form{
+  display:flex;
+  width:70vw;
+  margin:0rem 15vw;
+  margin:auto;
+  padding:2rem 0rem;
+}
+#content-inicio {
+  background:var(--negro-secondary);
+}
+.inicio{
+  justify-content:center;
+  display:grid;
+  grid-template-columns:25% 25% 50%;
+  background:var(--negro-secondary);
+}
+.inicio h1{
+  position:absolute;
+  font-size:2rem;
+  color:var(--blanco);
+  margin:0rem 1rem;
+  font-style:italic;
+}
+.inicio a{
+  text-align:center;
+  background:var(--violeta);
+  color:var(--blanco);
+  font-size:16px;
+  min-width:200px;
+  border-radius:16px;
+  padding:0.5rem 0rem;
+  margin-left:10vw;
+}
+.inicio p {
+  text-align:left;
+  font-size:22px;
+  margin:0px 25px;
+  margin-top:20vh;
+  color:var(--blanco);
+}
+.inicio img {
+  height:23rem;
+  margin-top:4rem;
+  margin-left:10vw;
+}
+.container{
+  min-height:100vh;
+  font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+}
+
+

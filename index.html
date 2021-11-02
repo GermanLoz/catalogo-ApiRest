@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/b90e9e4354.js" crossorigin="anonymous"></script>
+    <link href="./assets/style.css" rel="stylesheet" type="text/css">
+    <link href="./assets/responsive.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>Ap KeepSmilling</title>
+    <header id="header">
+    <!--    HEADER      -->
+    <script src="components/header.js"></script>
+    <!--   END  HEADER      -->
+    </header>
+<body>
+
+    <div class="container" id="content-inicio">
+        <form class="form" style="margin-left:5rem;">
+            <input type="email" placeholder="Email" name="email"></input>
+            <input type="password" placeholder="contraseña" name="password"></input>
+            <input type="submit" value="Login"></input>
+        </form>
+        <div class="mensaje" id="mensaje">
+            <p class="mensaje-p"></p>
+        </div>
+        <section>
+            <div class="inicio">
+                <h1>Catalogo de celulares</h1>
+                <img src="./assets/img.png"><img>
+                <p>Pedir password al dev para probar el panel de administracion. 
+                   Esta App es un CRUD de productos, la misma tiene un catalogo donde te muestra todos los productos, podemos filtrar segun marca, mayor, menor precio. Se utilizo Alghorithmo de ordenamiento Marge Sort, Se desarrollo API REST con PHP, MYSQL, SQL.</p>
+                <a href="http://localhost/AENIMA/products.html">VER</a>
+            </div>
+    </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src ="./controllers/admin/functions.js"></script>
+    <script src ="./controllers/nav.js"></script>
+    <script src ="./controllers/alertas.js"></script>
+    <script src ="./controllers/home/POST.js"></script>
+</body>
+</html>
